@@ -220,3 +220,7 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+header {
+  background-image: url(../assets/home.jpg);
+}
