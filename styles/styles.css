@@ -221,6 +221,82 @@ html {
   overflow: hidden;
 }
 
-header {
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 125%;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 5rem;
+  margin-top: 0;
+  color: #333;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #666;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.index-header {
+  display: flex;
+  align-items: center;
+  height: 85vh;
   background-image: url(../assets/home.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.index-header .textbox {
+  width: 15%;
+  margin-left: 20%;
+}
+
+.contact-header {
+  display: flex;
+  align-items: center;
+  height: 26vh;
+  background-image: url(../assets/contact-us.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact-header h1 {
+  width: 15%;
+  margin-left: 20%;
+  font-size: 4rem;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 2rem 10rem;
+}
+.topbar nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 2.5rem;
+}
+.topbar nav ul li a {
+  color: #333;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+}
+.topbar nav ul li a:hover, .topbar nav ul li a:focus {
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
 }
