@@ -19,7 +19,7 @@ $sand:#d7b89c;
 body{font-family: 'Poppins', sans-serif;font-weight: 400;font-size: 125%;}
 h1{font-family: 'Poppins', sans-serif;font-weight: 500; font-size:5rem;margin-top: 0; color: $gray;}
 p{font-weight: 400;font-size: 1.25rem;color: $l-gray;}
-.wrapper{width:70%; margin:0 auto;}
+.wrapper{width:80%; max-width:1400px;  margin:0 auto;}
 
 //Header & Topbar
 .index-header{
@@ -72,6 +72,75 @@ p{font-weight: 400;font-size: 1.25rem;color: $l-gray;}
             text-decoration: underline 2px;
         }
     }
+}
+
+// Index: Categories
+.banners{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    gap: calc(25rem - 23rem); 
+    
+    & .banner-images{
+        width: 25rem;
+    }
+    .low{
+        margin-top: 5rem;
+    }
+    .center{
+        margin-bottom: 3rem;
+    }
+}
+h3{
+    padding: 2% 10%;
+    position: absolute;
+    background-color: $white;
+    margin: 0;
+}
+.plants{
+    position: relative;
+    & h3{
+        top: 88%;
+    }
+}
+.furniture{
+    position: relative;
+    & h3{
+        top: 79%;
+    }
+}
+.decoration{
+    position: relative;
+    & h3{
+        top: 91%;
+    }
+}
+//Contact forms 
+form{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 45%;
+    &   .form-item{
+            border: none;
+            border-bottom: $l-gray 1px solid;
+            font-family: 'Poppins', sans-serif;
+        }
+        .form-button{
+            width: 10rem;
+            height: 3rem;
+            border-radius: 0;
+            border: $gray 1px solid;
+            background-color: $white;
+            font-family: 'Poppins', sans-serif;
+            transition: .25s;
+        }
+        .form-button:hover, .form-button:focus{
+            background-color: $l-gray;
+            color: $white;
+            transition: .25s;
+        }
 }
 
 
