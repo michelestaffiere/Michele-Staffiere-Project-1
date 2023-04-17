@@ -311,39 +311,21 @@ p {
 .banners .banner-images {
   width: 25rem;
 }
-.banners .low {
-  margin-top: 5rem;
-}
-.banners .center {
-  margin-bottom: 3rem;
-}
-
-h3 {
+.banners h3 {
   padding: 2% 10%;
   position: absolute;
   background-color: #fff;
   margin: 0;
+  top: 90%;
 }
-
-.plants {
+.banners .furniture {
   position: relative;
+  align-self: start;
 }
-.plants h3 {
-  top: 88%;
-}
-
-.furniture {
+.banners .decoration, .banners .plants {
+  margin-top: 2rem;
   position: relative;
-}
-.furniture h3 {
-  top: 79%;
-}
-
-.decoration {
-  position: relative;
-}
-.decoration h3 {
-  top: 91%;
+  align-self: end;
 }
 
 form {
@@ -371,4 +353,107 @@ form .form-button:hover, form .form-button:focus {
   background-color: #666;
   color: #fff;
   transition: 0.25s;
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 3rem;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+}
+footer h3, footer p, footer li {
+  color: #fff;
+  list-style: none;
+}
+footer h3 {
+  margin: 0 0 2rem 0;
+}
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+footer .footer-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+footer .footer-container .socials {
+  display: flex;
+  flex-direction: column;
+  max-width: 25%;
+}
+footer .footer-container .socials img {
+  margin-bottom: 1rem;
+  align-self: start;
+  height: auto;
+  width: 10rem;
+}
+footer .footer-container .socials p {
+  margin-bottom: 2rem;
+}
+footer .footer-container .socials ul {
+  display: flex;
+  gap: 2rem;
+  align-items: baseline;
+}
+footer .footer-container .socials ul li {
+  list-style: none;
+}
+footer .footer-container .socials ul img {
+  height: auto;
+  width: 1.5rem;
+}
+footer .footer-container .socials ul li:nth-child(1) img {
+  height: auto;
+  width: 0.75rem;
+}
+footer .footer-container .contact {
+  display: flex;
+  flex-direction: column;
+  max-width: 25%;
+}
+footer .footer-container .contact ul {
+  margin: 0;
+  padding: 0;
+}
+footer .footer-container .contact li {
+  list-style: none;
+  line-height: 2;
+}
+footer .footer-container .contact img {
+  height: auto;
+  width: 1.5rem;
+  margin-right: 1rem;
+}
+footer .footer-container .profile {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-container .profile ul {
+  margin: 0;
+  padding: 0;
+}
+footer .footer-container .profile li {
+  list-style: none;
+  line-height: 2;
+}
+footer .footer-container .profile img {
+  height: auto;
+  width: 1.5rem;
+  margin-right: 1rem;
+}
+footer .footer-container form {
+  width: 100%;
+  margin: 0;
+}
+footer .footer-container form p {
+  margin: 0;
+}
+footer .footer-container form input {
+  border: none;
+  border-bottom: #666 1px solid;
+  background-color: #333;
+  color: #fff;
 }
