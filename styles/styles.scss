@@ -6,8 +6,6 @@ html { box-sizing: border-box;}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-// General Styling
-
 // Colour Vars
 $pink:#eba6aa;
 $gray:#333;
@@ -15,10 +13,37 @@ $l-gray:#666;
 $blue:#88cce2;
 $white:#fff;
 $sand:#d7b89c;
+$l-gray-transparent:#6666661e;
 
-body{font-family: 'Poppins', sans-serif;font-weight: 400;font-size: 125%;}
-h1{font-family: 'Poppins', sans-serif;font-weight: 500; font-size:5rem;margin-top: 0; color: $gray;}
-p{font-weight: 400;font-size: 1.25rem;color: $l-gray;}
+// General Styling
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 125%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    & main{
+        flex-grow: 1;
+    }
+    h1{font-family: 'Poppins', sans-serif;font-weight: 500; font-size:5rem;margin-top: 0; color: $gray;}
+    p{font-weight: 400;font-size: 1.25rem;color: $l-gray;}
+    button{
+        width: 10rem;
+        height: 3rem;
+        border-radius: 0;
+        border: $gray 1px solid;
+        background-color: $white;
+        font-family: 'Poppins', sans-serif;
+        transition: .25s;
+    }
+    button:hover,button:focus{
+        background-color: $l-gray;
+        color: $white;
+        border: none;
+        transition: .25s;
+    }
+}
 .wrapper{width:80%; max-width:1400px;  margin:0 auto;}
 
 //Header & Topbar
@@ -73,7 +98,6 @@ p{font-weight: 400;font-size: 1.25rem;color: $l-gray;}
         }
     }
 }
-
 // Index: Categories
 .banners{
     display: flex;
@@ -101,8 +125,79 @@ p{font-weight: 400;font-size: 1.25rem;color: $l-gray;}
         align-self: end;
     }
 }
+// Featured Sale section
+.featured{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & h2{
+        margin: 4rem 0;
+    } 
+    .container{
+        text-align: center;
+        max-width: 70%;
+        min-width: 50%;
+        margin: 3.5rem 0;
+        & ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 0;
+            margin: 0;
+            & li{
+                position: relative;
+                list-style: none;
+                border: 1px solid $l-gray-transparent;
+                padding: 1%;
+                box-shadow: 0px 0px 10px 1px  rgba(0, 0, 0, 0.276);
+                -webkit-box-shadow: 0px 0px 10px 1px  rgba(0, 0, 0, 0.276);
+                -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.276);
+                & .special-item{
+                    position: absolute;
+                    padding: .5rem 1rem;
+                    margin: 0;
+                    background-color: $pink;
+                    color: $white;
+                    top: 24px;
+                    left: -1px;
+                } 
+                .blue{
+                    background-color: $blue;
+                }
+                .pink{
+                    background-color: $pink;
+                }
+                .product-information{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-right: 4%;
+                    & img{
+                        border: $l-gray-transparent 1px solid;
+                        padding: .5rem;
+                    }
+                    span{
+                        text-decoration: line-through;
+                        margin: 0 1rem 0 0;
+                    }
+                }   
+                h3{
+                    margin: 0;
+                    text-align: left;
+                } 
+            }
+            li img{
+            max-width: 17rem;
+            }
+        }
+    }
+}
 
-//Contact forms 
+
+//Contact us page forms 
 form{
     margin-top: 3rem;
     display: flex;
@@ -114,23 +209,7 @@ form{
             border-bottom: $l-gray 1px solid;
             font-family: 'Poppins', sans-serif;
         }
-        .form-button{
-            width: 10rem;
-            height: 3rem;
-            border-radius: 0;
-            border: $gray 1px solid;
-            background-color: $white;
-            font-family: 'Poppins', sans-serif;
-            transition: .25s;
-        }
-        .form-button:hover, .form-button:focus{
-            background-color: $l-gray;
-            color: $white;
-            transition: .25s;
-        }
 }
-
-
 //Footer
 footer{
     // border: red 12px dotted;
@@ -138,7 +217,7 @@ footer{
     padding: 3rem;
     background-color: $gray;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     & h3,p,li{
         color: $white;
         list-style: none;
@@ -188,9 +267,6 @@ footer{
                 width: .75rem;
             }
         }
-
-
-
         // Contact information
 
         .contact{
@@ -212,7 +288,6 @@ footer{
             }
         }
         // User Profile information
-
         .profile{
             display: flex;
             flex-direction: column;
