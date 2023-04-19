@@ -358,8 +358,6 @@ body button:hover, body button:focus {
 }
 .featured .container {
   text-align: center;
-  max-width: 70%;
-  min-width: 50%;
   margin: 3.5rem 0;
 }
 .featured .container ul {
@@ -414,7 +412,64 @@ body button:hover, body button:focus {
   text-align: left;
 }
 .featured .container ul li img {
-  max-width: 17rem;
+  max-width: 12.5rem;
+}
+
+.sale-CTA {
+  margin-top: 15rem;
+  display: flex;
+  justify-content: center;
+}
+.sale-CTA .sale-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.sale-CTA .sale-container div {
+  display: flex;
+  position: relative;
+}
+.sale-CTA .sale-container div img {
+  max-height: 50rem;
+}
+.sale-CTA .sale-container div .sale-50 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  top: 64%;
+  left: 22%;
+}
+.sale-CTA .sale-container div .sale-50 p span {
+  background-color: #fff;
+  color: #eba6aa;
+  padding: 0.25rem 1.25rem;
+  margin: 0;
+  font-weight: 600;
+}
+.sale-CTA .sale-container div .sale-50 h2, .sale-CTA .sale-container div .sale-50 p {
+  color: #fff;
+  margin: 1rem;
+}
+.sale-CTA .sale-container div .sale-50 h2 {
+  font-size: 5.25rem;
+  margin: 1rem 0;
+}
+.sale-CTA .sale-container div .sale-30 {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  display: block;
+  line-height: 1.25;
+  border: 1px solid #fff;
+  padding: 1rem 2rem;
+  top: 9%;
+  left: 26%;
+}
+.sale-CTA .sale-container div .sale-30 span {
+  font-weight: 600;
+  font-size: 4rem;
 }
 
 form {

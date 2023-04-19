@@ -136,8 +136,6 @@ body{
     } 
     .container{
         text-align: center;
-        max-width: 70%;
-        min-width: 50%;
         margin: 3.5rem 0;
         & ul {
             display: flex;
@@ -190,12 +188,68 @@ body{
                 } 
             }
             li img{
-            max-width: 17rem;
+            max-width: 12.5rem;
             }
         }
     }
 }
-
+// Sale Call to Action
+.sale-CTA{
+    margin-top: 15rem;
+    display: flex;
+    justify-content: center;
+    & .sale-container{
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        & div{
+            display: flex;
+            position: relative;
+            &  img{
+                max-height: 50rem;
+            }
+            .sale-50{
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                top: 64%;
+                left: 22%;
+                & p span{
+                    background-color: $white;
+                    color: $pink;
+                    padding: 0.25rem 1.25rem;
+                    margin: 0;
+                    font-weight: 600;
+                }
+                h2, p{
+                    color: $white;
+                    margin: 1rem;
+                }
+                h2{
+                    font-size: 5.25rem;
+                    margin: 1rem 0;
+                }
+            }
+            .sale-30{
+                position: absolute;
+                text-align: center;
+                color: $white;
+                font-size: 2.5rem;
+                display: block;
+                line-height: 1.25;
+                border: 1px solid $white;
+                padding: 1rem 2rem;
+                top: 9%;
+                left: 26%;
+                & span{
+                    font-weight: 600;
+                    font-size: 4rem;
+                }
+            }
+        } 
+    }
+}
 
 //Contact us page forms 
 form{
