@@ -1,38 +1,3 @@
-@media screen and (max-width: 1024px) {
-  .banner-images {
-    max-width: 15rem;
-  }
-  .banners h3 {
-    top: 84%;
-  }
-  .featured .container ul li img {
-    max-width: 15rem;
-  }
-  .sale-container div img {
-    max-height: 25rem;
-  }
-  .sale-50 {
-    top: 10%;
-    left: 10%;
-  }
-  .sale-30 {
-    padding: 0.5rem;
-    top: 20%;
-    left: 4%;
-  }
-  .Instagram ul {
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .Instagram ul img {
-    width: 15rem;
-  }
-  .footer-container {
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
-}
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -653,3 +618,42 @@ footer .footer-container form input {
   background-color: #333;
   color: #fff;
 }
+
+@media screen and (max-width: 1024px) {
+  .banner-images {
+    max-width: 15rem;
+  }
+  .banners h3 {
+    top: 40%;
+  }
+  .featured .container ul li img {
+    max-width: 15rem;
+  }
+  .sale-CTA .sale-container {
+    gap: 1rem;
+  }
+  .sale-CTA .sale-container div img {
+    max-height: 25rem;
+  }
+  .sale-CTA .sale-container div .sale-50 {
+    top: 10%;
+    left: 5%;
+  }
+  .sale-CTA .sale-container div .sale-30 {
+    padding: 0.5rem;
+    top: -5%;
+    left: 4%;
+  }
+  .sale-CTA .sale-container div .sale-30 span {
+    font-weight: 600;
+    font-size: 4rem;
+  }
+  .Instagram ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .Instagram ul li img {
+    max-width: 15rem;
+    height: auto;
+  }
+}/*# sourceMappingURL=styles.css.map */
