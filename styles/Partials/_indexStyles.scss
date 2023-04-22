@@ -1,0 +1,187 @@
+@use "variables";
+// Index: Categories
+
+// Site section banners
+.banners{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    gap: calc(25rem - 23rem); 
+    
+    & .banner-images{
+        width: 25rem;
+    }
+    h3{
+        padding: 2% 10%;
+        position: absolute;
+        background-color: $white;
+        margin: 0;
+        top: 90%;
+    }
+    .furniture{
+        position: relative;
+        align-self: start;
+    }
+    .decoration, .plants{
+        margin-top: 2rem;
+        position: relative;
+        align-self: end;
+    }
+}
+// Featured Sale section
+.featured{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & h2{
+        margin: 4rem 0;
+    } 
+    .container{
+        text-align: center;
+        margin: 3.5rem 0;
+        & ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 0;
+            margin: 0;
+            & li{
+                position: relative;
+                list-style: none;
+                border: 1px solid $l-gray-transparent;
+                padding: 1%;
+                box-shadow: 0px 0px 10px 1px  rgba(0, 0, 0, 0.276);
+                -webkit-box-shadow: 0px 0px 10px 1px  rgba(0, 0, 0, 0.276);
+                -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.276);
+                & .special-item{
+                    position: absolute;
+                    padding: .5rem 1rem;
+                    margin: 0;
+                    background-color: $pink;
+                    color: $white;
+                    top: 24px;
+                    left: -1px;
+                } 
+                .blue{
+                    background-color: $blue;
+                }
+                .pink{
+                    background-color: $pink;
+                }
+                .product-information{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-right: 4%;
+                    & img{
+                        border: $l-gray-transparent 1px solid;
+                        padding: .5rem;
+                    }
+                    span{
+                        text-decoration: line-through;
+                        margin: 0 1rem 0 0;
+                    }
+                }   
+                h3{
+                    margin: 0;
+                    text-align: left;
+                } 
+            }
+            li img{
+            max-width: 12.5rem;
+            }
+        }
+    }
+}
+// Sale Call to Action
+.sale-CTA{
+    margin-top: 15rem;
+    display: flex;
+    justify-content: center;
+    & .sale-container{
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        & div{
+            display: flex;
+            position: relative;
+            &  img{
+                max-height: 50rem;
+            }
+            .sale-50{
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                top: 64%;
+                left: 22%;
+                & p span{
+                    background-color: $white;
+                    color: $pink;
+                    padding: 0.25rem 1.25rem;
+                    margin: 0;
+                    font-weight: 600;
+                }
+                h2, p{
+                    color: $white;
+                    margin: 1rem;
+                }
+                h2{
+                    font-size: 5.25rem;
+                    margin: 1rem 0;
+                }
+            }
+            .sale-30{
+                position: absolute;
+                text-align: center;
+                color: $white;
+                font-size: 2.5rem;
+                display: block;
+                line-height: 1.25;
+                border: 1px solid $white;
+                padding: 1rem 2rem;
+                top: 9%;
+                left: 26%;
+                & span{
+                    font-weight: 600;
+                    font-size: 4rem;
+                }
+            }
+        } 
+    }
+}
+// Instagram demo 
+.Instagram{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    line-height: 1.25;
+    & p {
+        margin: 1rem 0 4rem;
+        font-size: 1rem;
+        text-align: center;
+    } 
+    span{
+        font-size: 3rem;
+        color: $gray;
+    }
+    ul{
+        display: flex;
+        gap: 1.5rem;
+        padding: 0;
+        margin: 0;
+        & li{
+            list-style: none;
+        }
+        li img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
