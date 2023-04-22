@@ -1,3 +1,38 @@
+@media screen and (max-width: 1024px) {
+  .banner-images {
+    max-width: 15rem;
+  }
+  .banners h3 {
+    top: 84%;
+  }
+  .featured .container ul li img {
+    max-width: 15rem;
+  }
+  .sale-container div img {
+    max-height: 25rem;
+  }
+  .sale-50 {
+    top: 10%;
+    left: 10%;
+  }
+  .sale-30 {
+    padding: 0.5rem;
+    top: 20%;
+    left: 4%;
+  }
+  .Instagram ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Instagram ul img {
+    width: 15rem;
+  }
+  .footer-container {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;

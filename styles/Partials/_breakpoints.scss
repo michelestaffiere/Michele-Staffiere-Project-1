@@ -1,0 +1,46 @@
+@use "variables" as *;
+
+
+
+// Tablet 
+@media screen and (max-width: 1024px){
+    //section banners
+     .banner-images {
+        max-width: 15rem;
+      }
+      .banners h3 {
+        top: 84%;
+      }
+      //featured sale section
+      .featured .container ul li img {
+        max-width: 15rem;
+      }
+      // Sale CTA 
+      .sale-container div img {
+        max-height: 25rem;
+      }
+      .sale-50 {
+        top: 10%;
+        left: 10%;
+      }
+      .sale-30{
+        padding: .5rem;
+        top: 20%;
+        left: 4%;
+      }
+      // Instagram
+      .Instagram ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        & img{
+            width: 15rem;
+        }
+      }
+      //footer
+      .footer-container{
+        flex-wrap: wrap;
+        gap:2rem;
+      }
+}
+                                                                                     
