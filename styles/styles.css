@@ -624,7 +624,7 @@ footer .footer-container form input {
     max-width: 15rem;
   }
   .banners h3 {
-    top: 40%;
+    top: 85%;
   }
   .featured .container ul li img {
     max-width: 15rem;
@@ -655,5 +655,9 @@ footer .footer-container form input {
   .Instagram ul li img {
     max-width: 15rem;
     height: auto;
+  }
+  footer .footer-container {
+    flex-wrap: wrap;
+    gap: 2rem;
   }
 }/*# sourceMappingURL=styles.css.map */

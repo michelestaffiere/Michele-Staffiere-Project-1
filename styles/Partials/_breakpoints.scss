@@ -7,7 +7,7 @@
         max-width: 15rem;
       }
       .banners h3{
-        top: 40%;
+        top: 85%;
       }
       //featured sale section
       .featured .container ul li img {
@@ -37,7 +37,7 @@
             } 
         }
     }
-    .Instagram{
+      .Instagram{
       & ul{
           justify-content: center;
           flex-wrap: wrap;
@@ -47,6 +47,13 @@
           }
       }
 }
+footer{
+  & .footer-container{
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+  }
 }
-
-                                                                                     
+// TODO
+// Phone screen breaking point at 320px
+// footer styling for both breaking points
