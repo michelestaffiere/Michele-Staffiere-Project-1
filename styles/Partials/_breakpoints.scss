@@ -2,6 +2,27 @@
 
 // Tablet 
 @media screen and (max-width: 1024px){
+ // Headers
+  .index-header{
+   position: relative;
+    & .textbox{
+      position: absolute;
+      top: 15%;
+      left: -18%;
+    }
+    p{
+      display: none;
+    }
+}
+.contact-header{
+   position: relative;
+    & h1{
+        position: absolute;
+        top: 11%;
+        left: 3%;
+        margin: 0;
+    }  
+}
     //section banners
      .banner-images {
         max-width: 15rem;
@@ -51,9 +72,124 @@ footer{
   & .footer-container{
       flex-wrap: wrap;
       gap: 2rem;
+      & .socials{
+        max-width: 35%;
+      }
+    // Contact information
+    .contact{
+        max-width: 35%;
+      }
     }
   }
 }
 // TODO
 // Phone screen breaking point at 320px
 // footer styling for both breaking points
+
+//Smartphones
+@media screen and (max-width: 620px){
+  // Nav Bar
+  .topbar{
+    justify-content: space-between;
+    padding: 2rem;
+    & nav ul{
+      display: none;
+    }
+}
+  // Headers
+   .index-header{
+     & .textbox{
+      width: 100%;
+       top: 2%;
+       & h1{
+        font-size: 2rem;
+       }
+     }
+ }
+ .contact-header{
+    position: static;
+    justify-content: center;
+    margin: 0;
+     & h1{
+        position: static;
+        margin: 0;
+        width: 90%;
+     }  
+ }
+ // Contact page
+ form{
+  width: 90%;
+  }
+//section banners
+  .banners{
+    flex-direction: column;
+  }
+  .banner-images {
+     max-width: 15rem;
+  }
+  .banners h3{
+    top: 85%;
+  }
+  //featured sale section
+  .featured .container ul li img {
+      max-width: 15rem;
+  }
+// Sale CTA 
+  .sale-CTA{
+    & .sale-container{
+        gap:1rem;
+        flex-direction: column;
+        align-items: center;
+          & div{
+            &  img{
+                 max-height: 25rem;
+                }
+             }
+             .sale-30-container{
+              & img{
+                aspect-ratio: .67/1;
+              }
+              .sale-30{
+                margin: 1rem;
+                top:0%;
+              }
+              p{
+                font-size: 2rem;
+                & span{
+                  font-size: 2rem;
+                }
+             }
+         }
+     }
+  .Instagram{
+    & ul{
+      justify-content: center;
+      flex-wrap: wrap;
+        & li img{
+            max-width: 15rem;
+            height: auto;
+          }
+       }
+    }
+  }
+  footer{
+    & .footer-container{
+      width: 100%;
+      flex-direction: column;
+      & .socials{
+        max-width: 100%;
+      }
+    // Contact information
+      .contact{
+        max-width: 100%;
+      }
+      .profile{
+        width: 100%;
+      }
+      .newsletter{
+        width: 100%;
+      }
+        
+    }
+  }
+}

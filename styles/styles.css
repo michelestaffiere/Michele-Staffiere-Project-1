@@ -266,6 +266,32 @@ body button:hover, body button:focus {
   margin: 0 auto;
 }
 
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 2rem 10rem;
+}
+.topbar nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 2.5rem;
+}
+.topbar nav ul li a {
+  color: #333;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+}
+.topbar nav ul li a:hover, .topbar nav ul li a:focus {
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+}
+
 .index-header {
   display: flex;
   align-items: center;
@@ -293,32 +319,6 @@ body button:hover, body button:focus {
   width: 15%;
   margin-left: 20%;
   font-size: 4rem;
-}
-
-.topbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
-  padding: 2rem 10rem;
-}
-.topbar nav ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  gap: 2.5rem;
-}
-.topbar nav ul li a {
-  color: #333;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 500;
-}
-.topbar nav ul li a:hover, .topbar nav ul li a:focus {
-  -webkit-text-decoration: underline 2px;
-          text-decoration: underline 2px;
 }
 
 .banners {
@@ -620,6 +620,26 @@ footer .footer-container form input {
 }
 
 @media screen and (max-width: 1024px) {
+  .index-header {
+    position: relative;
+  }
+  .index-header .textbox {
+    position: absolute;
+    top: 15%;
+    left: -18%;
+  }
+  .index-header p {
+    display: none;
+  }
+  .contact-header {
+    position: relative;
+  }
+  .contact-header h1 {
+    position: absolute;
+    top: 11%;
+    left: 3%;
+    margin: 0;
+  }
   .banner-images {
     max-width: 15rem;
   }
@@ -659,5 +679,97 @@ footer .footer-container form input {
   footer .footer-container {
     flex-wrap: wrap;
     gap: 2rem;
+  }
+  footer .footer-container .socials {
+    max-width: 35%;
+  }
+  footer .footer-container .contact {
+    max-width: 35%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .topbar {
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  .topbar nav ul {
+    display: none;
+  }
+  .index-header .textbox {
+    width: 100%;
+    top: 2%;
+  }
+  .index-header .textbox h1 {
+    font-size: 2rem;
+  }
+  .contact-header {
+    position: static;
+    justify-content: center;
+    margin: 0;
+  }
+  .contact-header h1 {
+    position: static;
+    margin: 0;
+    width: 90%;
+  }
+  form {
+    width: 90%;
+  }
+  .banners {
+    flex-direction: column;
+  }
+  .banner-images {
+    max-width: 15rem;
+  }
+  .banners h3 {
+    top: 85%;
+  }
+  .featured .container ul li img {
+    max-width: 15rem;
+  }
+  .sale-CTA .sale-container {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sale-CTA .sale-container div img {
+    max-height: 25rem;
+  }
+  .sale-CTA .sale-container .sale-30-container img {
+    aspect-ratio: 0.67/1;
+  }
+  .sale-CTA .sale-container .sale-30-container .sale-30 {
+    margin: 1rem;
+    top: 0%;
+  }
+  .sale-CTA .sale-container .sale-30-container p {
+    font-size: 2rem;
+  }
+  .sale-CTA .sale-container .sale-30-container p span {
+    font-size: 2rem;
+  }
+  .sale-CTA .Instagram ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .sale-CTA .Instagram ul li img {
+    max-width: 15rem;
+    height: auto;
+  }
+  footer .footer-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  footer .footer-container .socials {
+    max-width: 100%;
+  }
+  footer .footer-container .contact {
+    max-width: 100%;
+  }
+  footer .footer-container .profile {
+    width: 100%;
+  }
+  footer .footer-container .newsletter {
+    width: 100%;
   }
 }/*# sourceMappingURL=styles.css.map */
