@@ -201,6 +201,7 @@ template {
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -772,4 +773,4 @@ footer .footer-container form input {
   footer .footer-container .newsletter {
     width: 100%;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
