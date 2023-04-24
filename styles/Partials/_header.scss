@@ -7,7 +7,10 @@
     align-items: center;
     background-color: $white;
     padding: 2rem 10rem;
-    & nav ul{
+    & i{
+        display: none;
+    }
+    nav ul{
         display: flex;
         list-style: none;
         justify-content: center;

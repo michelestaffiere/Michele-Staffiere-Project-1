@@ -274,6 +274,9 @@ body button:hover, body button:focus {
   background-color: #fff;
   padding: 2rem 10rem;
 }
+.topbar i {
+  display: none;
+}
 .topbar nav ul {
   display: flex;
   list-style: none;
@@ -692,6 +695,9 @@ footer .footer-container form input {
   .topbar {
     justify-content: space-between;
     padding: 2rem;
+  }
+  .topbar i {
+    display: block;
   }
   .topbar nav ul {
     display: none;
