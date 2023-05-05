@@ -15,11 +15,8 @@
 .close{
     display: none;
 }    
-body .mobile-nav .show-Menu{
-    transform: translateY(0);
-}
 // slide down menu styling
-  .mobile-nav{
+.mobile-nav{
     width: 100%;  
     height: 5vh;
     padding: 1rem;
@@ -27,17 +24,17 @@ body .mobile-nav .show-Menu{
     align-items: center;
     justify-content:start;
     
-   & .inner-nav-menu{
-       position: fixed;
-       text-align: center;
-       top: -20px;
-       transform: translateY(-100%);
-       transition: transform 0.2s;
-       left: 0;
-       right: 0;
-       bottom: 0;
-       z-index: 99;
-       width: 100%;
+    & .inner-nav-menu{
+        position: fixed;
+        text-align: center;
+        top: -20px;
+        transform: translateY(-100%);
+        transition: transform .5s;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        width: 100%;
        padding: 0;
        height: 25vh;
        background-color: $l-gray;
@@ -61,6 +58,9 @@ body .mobile-nav .show-Menu{
 }    
 
 
+.mobile-nav .show-Menu{  //  -> .mobile-nav to add specifity to overwrite the .inner-nav.menu, needs to be placed after innner-nav so cascading style sheet logic can apply. otherwise inner-nav  will overwrite.
+    transform: translateY(0);
+}
 
 
 

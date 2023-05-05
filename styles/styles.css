@@ -797,10 +797,6 @@ footer .footer-container form input {
   display: none;
 }
 
-body .mobile-nav .show-Menu {
-  transform: translateY(0);
-}
-
 .mobile-nav {
   width: 100%;
   height: 5vh;
@@ -814,7 +810,7 @@ body .mobile-nav .show-Menu {
   text-align: center;
   top: -20px;
   transform: translateY(-100%);
-  transition: transform 0.2s;
+  transition: transform 0.5s;
   left: 0;
   right: 0;
   bottom: 0;
@@ -840,4 +836,8 @@ body .mobile-nav .show-Menu {
   text-decoration: none;
   color: #fff;
   background-color: #333;
+}
+
+.mobile-nav .show-Menu {
+  transform: translateY(0);
 }
