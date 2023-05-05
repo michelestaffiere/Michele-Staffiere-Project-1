@@ -1,7 +1,7 @@
 @use "variables" as *;
 
 //Topbar
-.topbar{
+.desktop-topbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,7 +10,7 @@
     & i{
         display: none;
     }
-    nav ul{
+    ul{
         display: flex;
         list-style: none;
         justify-content: center;
