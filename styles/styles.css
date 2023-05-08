@@ -245,7 +245,7 @@ body p {
   font-size: 1.25rem;
   color: #666;
 }
-body button {
+body .page-btn {
   width: 10rem;
   height: 3rem;
   border-radius: 0;
@@ -254,7 +254,7 @@ body button {
   font-family: "Poppins", sans-serif;
   transition: 0.25s;
 }
-body button:hover, body button:focus {
+body .page-btn:hover, body .page-btn:focus {
   background-color: #666;
   color: #fff;
   border: none;
@@ -781,44 +781,72 @@ footer .footer-container form input {
     width: 100%;
   }
 }
-.hamburger-Menu {
-  cursor: pointer;
+.hamburger {
   position: fixed;
-  right: 1rem;
-  top: 0.5rem;
   z-index: 100;
-  background-color: #666;
-  border-radius: 10%;
-  transition: 0.5s;
-  width: 5rem;
+  display: block;
+  width: 50px;
+  height: 35px;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  background-color: none;
+  outline: none;
+  border: none;
+  top: 10px;
+  left: 10px;
 }
 
-.close {
-  display: none;
+.hamburger .bars, .hamburger::after, .hamburger::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  background-color: black;
+  margin: 6px 0px;
+  transition: 0.4s;
+  z-index: 100;
+}
+
+.hamburger.is-active::before {
+  transform: rotate(-45deg) translate(-10px, 15px);
+}
+
+.hamburger.is-active::after {
+  transform: rotate(45deg) translate(0px, -6px);
+}
+
+.hamburger.hamburger.is-active .bars {
+  opacity: 0;
 }
 
 .mobile-nav {
+  position: fixed;
   width: 100%;
   height: 5vh;
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: start;
+  z-index: 99;
 }
 .mobile-nav .inner-nav-menu {
   position: fixed;
   text-align: center;
   top: -20px;
-  transform: translateY(-100%);
+  transform: translateX(-100%);
   transition: transform 0.5s;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 99;
   width: 100%;
   padding: 0;
-  height: 25vh;
-  background-color: #666;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: rgba(126, 112, 112, 0.303);
 }
 .mobile-nav li {
   list-style: none;
@@ -839,5 +867,5 @@ footer .footer-container form input {
 }
 
 .mobile-nav .show-Menu {
-  transform: translateY(0);
+  transform: translateX(0);
 }

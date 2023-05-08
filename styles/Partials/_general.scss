@@ -17,7 +17,7 @@ body{
     }
     h1{font-family: 'Poppins', sans-serif;font-weight: 500; font-size:5rem;margin-top: 0; color: $gray;}
     p{font-weight: 400;font-size: 1.25rem;color: $l-gray;}
-    button{
+    .page-btn{
         width: 10rem;
         height: 3rem;
         border-radius: 0;
@@ -26,7 +26,7 @@ body{
         font-family: 'Poppins', sans-serif;
         transition: .25s;
     }
-    button:hover,button:focus{
+    .page-btn:hover,.page-btn:focus{
         background-color: $l-gray;
         color: $white;
         border: none;

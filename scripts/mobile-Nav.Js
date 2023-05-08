@@ -16,29 +16,11 @@
 // when the cart icon next to a prodcut is clicked add a icon to the cart that shows how many items are in the cart.
 
 // add a cart icon to the mobile menu.
-
-
-
-//Variables for grabbinga and changing nav styles / view
-const hamburgerButton = document.getElementById(`menu`)
-const openMenu = document.getElementById(`openMenu`);
-const closeMenu = document.getElementById(`closeMenu`);
+const mobileMenu = document.querySelector(`.hamburger`);
 const navMenu = document.getElementById(`inner-nav-menu`);
 
-// function to hide and show everything on click.
-hamburgerButton.addEventListener(`click`,(e)=>{
-    if(navMenu.classList.contains(`show-Menu`)){
-        navMenu.classList.remove(`show-Menu`);
-        closeMenu.style.display =  `none`;
-        openMenu.style.display = `block`;
-    } else{
-        navMenu.classList.add(`show-Menu`);
-        closeMenu.style.display =  `block`;
-        openMenu.style.display = `none`;
-    }
-});
+mobileMenu.addEventListener(`click`, () =>{
+    mobileMenu.classList.toggle(`is-active`);
+    navMenu.classList.toggle(`show-Menu`);
 
-
-// Variables for adding & removing from cart.
-
-
+})

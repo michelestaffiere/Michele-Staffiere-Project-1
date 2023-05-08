@@ -1,43 +1,68 @@
 @use "variables" as *;
 
+
 // hamburger icon styling
-.hamburger-Menu{
-    cursor: pointer;
+.hamburger{
     position: fixed;
-    right: 1rem;
-    top: .5rem;
     z-index: 100;
-    background-color: $l-gray;
-    border-radius: 10%;
-    transition: .5s;
-    width: 5rem;
-}    
-.close{
-    display: none;
-}    
-// slide down menu styling
+    display: block;
+    width: 50px;
+    height: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    background-color: none;
+    outline: none;
+    border: none;
+    top: 10px;
+    left: 10px;
+}
+.hamburger .bars, .hamburger::after, .hamburger::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: black;
+    margin: 6px 0px;
+    transition: 0.4s;
+    z-index: 100;
+}
+// Animation for hamburger menu
+.hamburger.is-active::before{
+    transform: rotate(-45deg)translate(-10px,15px);
+}
+.hamburger.is-active::after{
+    transform: rotate(45deg)translate( 0px,-6px);
+}
+.hamburger.hamburger.is-active .bars{
+    opacity:0;
+}
+
+// pop out menu styling
 .mobile-nav{
+    position: fixed;
     width: 100%;  
     height: 5vh;
     padding: 1rem;
     display: flex;
     align-items: center;
     justify-content:start;
+    z-index: 99;
     
     & .inner-nav-menu{
         position: fixed;
         text-align: center;
         top: -20px;
-        transform: translateY(-100%);
+        transform: translateX(-100%);
         transition: transform .5s;
         left: 0;
         right: 0;
         bottom: 0;
-        z-index: 99;
         width: 100%;
-       padding: 0;
-       height: 25vh;
-       background-color: $l-gray;
+        padding: 0;
+        height: fit-content;
+        background:rgba(126, 112, 112, 0.303);
     }   
     & li{
         list-style: none;
@@ -56,10 +81,8 @@
         }    
     }    
 }    
-
-
-.mobile-nav .show-Menu{  //  -> .mobile-nav to add specifity to overwrite the .inner-nav.menu, needs to be placed after innner-nav so cascading style sheet logic can apply. otherwise inner-nav  will overwrite.
-    transform: translateY(0);
+.mobile-nav .show-Menu{ 
+    transform: translateX(0);
 }
 
 
