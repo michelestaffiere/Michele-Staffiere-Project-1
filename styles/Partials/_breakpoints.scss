@@ -91,11 +91,14 @@ footer{
   // Nav Bar
   .desktop-topbar{
     display: none;
-    justify-content: space-between;
-    padding: 2rem;
+    // justify-content: space-between;
+    // padding: 2rem;
     & ul{
       display: none;
     }
+}
+.hamburger{
+  display: block;
 }
 .cart-icon{
   display: none;
