@@ -28,6 +28,7 @@
         align-self: end;
     }
 }
+
 // Featured Sale section
 .featured{
     display: flex;
@@ -184,4 +185,19 @@
             height: auto;
         }
     }
+}
+
+// mobile banner carousel 
+.carousel{
+    position: relative;
+}
+.carousel-item{
+    height: 100%;
+    width: auto;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.carousel-item.active-item{
+    opacity: 1;
 }
