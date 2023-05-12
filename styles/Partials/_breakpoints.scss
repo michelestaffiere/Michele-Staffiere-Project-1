@@ -30,6 +30,10 @@
       .banners h3{
         top: 85%;
       }
+      // mobile banner carousel buttons
+      .carousel-right,.carousel-left{
+        display: flex;
+    }
       //featured sale section
       .featured .container ul li img {
         max-width: 15rem;
@@ -129,7 +133,7 @@ footer{
   }
 //section banners
   .banners{
-    flex-direction: column;
+    // display: block;
   }
   .banner-images {
      max-width: 15rem;

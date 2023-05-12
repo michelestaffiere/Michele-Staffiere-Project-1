@@ -11,7 +11,7 @@
     & .banner-images{
         width: 25rem;
     }
-    h3{
+     body .banners h3{
         padding: 2% 10%;
         position: absolute;
         background-color: $white;
@@ -189,15 +189,37 @@
 
 // mobile banner carousel 
 .carousel{
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .carousel-item{
     height: 100%;
     width: auto;
-    position: absolute;
-    opacity: 0;
+    display: none;
     transition: opacity 0.5s ease-in-out;
+    top: -15%;
+    right: 14%;
 }
 .carousel-item.active-item{
-    opacity: 1;
+    display: block;
+}
+.carousel-right,.carousel-left{
+    background-color: rgba(0, 0, 0, 0.235);
+    border: none;
+    border-radius:10px ;
+    display: none;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-size: 3rem;
+    // position: absolute;
+    top: 60rem;
+    transition: 0.5 ease-in-out;
+}
+.carousel-right{
+    right: 1rem;
+}
+.carousel-left{
+    left: 1rem;
 }

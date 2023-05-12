@@ -20,35 +20,4 @@ let menuToggle = () =>{
 mobileMenu.addEventListener(`click`, menuToggle)
 for (let i = 0; i < menuItems.length; i++){
     menuItems[i].addEventListener(`click`,menuToggle )  // Adds event listeners to menu items so the menu can close when an menu item is clicked.
-}
-
-// Categories carousel
-
-//setting up variables that will be used.
-const carouselContainer = document.querySelector(`.banners`);
-const carouselItems = Array.from(carouselContainer.children);
-
-// creating a variable that matches the breakpoint for mobile   viewport
-const mobileviewPort = window.matchMedia("(max-width: 720px)");
-
-
-// creating a callback function to apply classes and remove classes based on the viewport size
-viewPortHandling = () =>{
-    if (mobileviewPort.matches){
-        carouselContainer.classList.add(`carousel`);
-        carouselItems.forEach((child) =>{
-        child.classList.add(`carousel-item`);
-        })
-    } else{
-        carouselContainer.classList.remove(`carousel`);
-        carouselItems.forEach((child) =>{
-        child.classList.remove(`carousel-item`);
-        })
-    };
 };
-
-// adding an event listener to the window and having it trigger the viewPortHandling function when the viewport matches the breakpoint query in scss.
-window.addEventListener(`resize`,viewPortHandling);
-
-
-
