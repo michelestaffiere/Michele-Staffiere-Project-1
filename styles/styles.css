@@ -360,11 +360,11 @@ body .page-btn:hover, body .page-btn:focus {
 .featured h2 {
   margin: 4rem 0;
 }
-.featured .container {
+.featured .featuredContainer {
   text-align: center;
   margin: 3.5rem 0;
 }
-.featured .container ul {
+.featured .featuredContainer ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -372,7 +372,7 @@ body .page-btn:hover, body .page-btn:focus {
   padding: 0;
   margin: 0;
 }
-.featured .container ul li {
+.featured .featuredContainer ul li {
   position: relative;
   list-style: none;
   border: 1px solid rgba(102, 102, 102, 0.1176470588);
@@ -381,7 +381,7 @@ body .page-btn:hover, body .page-btn:focus {
   -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.276);
   -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.276);
 }
-.featured .container ul li .special-item {
+.featured .featuredContainer ul li .special-item {
   position: absolute;
   padding: 0.5rem 1rem;
   margin: 0;
@@ -390,32 +390,32 @@ body .page-btn:hover, body .page-btn:focus {
   top: 24px;
   left: -1px;
 }
-.featured .container ul li .blue {
+.featured .featuredContainer ul li .blue {
   background-color: #88cce2;
 }
-.featured .container ul li .pink {
+.featured .featuredContainer ul li .pink {
   background-color: #eba6aa;
 }
-.featured .container ul li .product-information {
+.featured .featuredContainer ul li .product-information {
   display: flex;
   justify-content: space-around;
   align-items: center;
   justify-content: space-between;
   padding-right: 4%;
 }
-.featured .container ul li .product-information img {
+.featured .featuredContainer ul li .product-information img {
   border: rgba(102, 102, 102, 0.1176470588) 1px solid;
   padding: 0.5rem;
 }
-.featured .container ul li .product-information span {
+.featured .featuredContainer ul li .product-information span {
   text-decoration: line-through;
   margin: 0 1rem 0 0;
 }
-.featured .container ul li h3 {
+.featured .featuredContainer ul li h3 {
   margin: 0;
   text-align: left;
 }
-.featured .container ul li img {
+.featured .featuredContainer ul li img {
   max-width: 12.5rem;
 }
 
@@ -750,6 +750,32 @@ footer .footer-container form input {
   transform: translateY(0);
 }
 
+.cartContainer {
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+  position: fixed;
+  display: flex;
+  justify-content: start;
+}
+
+.cartMenu {
+  transition: transform 0.5s ease-in-out;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.active {
+  transform: translateY(-100%);
+}
+
+.cartItem {
+  color: #333;
+}
+
 @media screen and (max-width: 1024px) {
   .index-header {
     position: relative;
@@ -908,4 +934,4 @@ footer .footer-container form input {
   footer .footer-container .newsletter {
     width: 100%;
   }
-}
+}/*# sourceMappingURL=styles.css.map */
