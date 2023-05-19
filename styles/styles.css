@@ -407,9 +407,10 @@ body .page-btn:hover, body .page-btn:focus {
   border: rgba(102, 102, 102, 0.1176470588) 1px solid;
   padding: 0.5rem;
 }
-.featured .featuredContainer ul li .product-information span {
+.featured .featuredContainer ul li .product-information .reduced {
   text-decoration: line-through;
   margin: 0 1rem 0 0;
+  display: inline-block;
 }
 .featured .featuredContainer ul li h3 {
   margin: 0;
