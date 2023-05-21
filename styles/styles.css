@@ -754,10 +754,11 @@ footer .footer-container form input {
 .cartContainer {
   width: 100%;
   height: 100vh;
-  padding: 1rem;
+  padding: 0;
   position: fixed;
   display: flex;
-  justify-content: start;
+  justify-content: end;
+  transition: transform 0.5s ease-in-out;
 }
 
 .cartMenu {
@@ -765,16 +766,48 @@ footer .footer-container form input {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   list-style: none;
+  margin: 0px;
+  padding: 2rem 2rem 0;
+  width: 20%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.cartMenu li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.0784313725);
+  margin-bottom: 5rem;
+  width: 100%;
+  height: 10rem;
+}
+.cartMenu li img {
+  margin: 0 1rem;
+  height: auto;
+  width: 5rem;
+}
+.cartMenu li p {
+  margin: 0 1rem;
+  width: 8rem;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+.cartMenu li button {
+  align-self: end;
 }
 
 .active {
-  transform: translateY(-100%);
+  transform: translateX(0%);
 }
 
 .cartItem {
   color: #333;
+}
+
+.addCart {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) {
@@ -935,4 +968,4 @@ footer .footer-container form input {
   footer .footer-container .newsletter {
     width: 100%;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
