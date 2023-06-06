@@ -12,21 +12,44 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="topbar">
-       <img src="./assets/logo-black.png" alt="Novas">
-        <nav>
-            <ul>
-                <li class="navitem">
-                    <a href="./index.html">Home</a></li>
-                <li class="navitem">
-                    <a href="./index.html#blog">Blog</a>
-                </li>
-                <li class="navitem">
-                    <a href="./contact.html">Contact Us</a>
-                </li>
-            </ul>
-        </nav>
-        <img src="./assets/icons/shopping-cart-black-icon.png">
+    <div class="cartContainer">
+        <ul class="cartMenu" >
+            // cartItems go here.
+        </ul>
+    </div>
+    <div id="mobile-nav"class="mobile-nav">
+        <ul id="inner-nav-menu"class="inner-nav-menu">
+            <li class="navitem">
+                <a href="./index.html">Home</a>
+            </li>
+            <li class="navitem">
+                <a href="#">Cart</a>
+            </li>
+            <li class="navitem">
+                <a href="./index.html#blog">Blog</a>
+            </li>
+            <li class="navitem">
+                <a href="./contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+  <button class="hamburger">
+    <div class="bars"></div>
+  </button>
+    <div class="desktop-topbar">
+       <img src="./assets/logo-black.png" alt="company logo">
+        <ul>
+            <li class="navitem">
+                <a href="./index.html">Home</a>
+            </li>
+            <li class="navitem">
+                <a href="./index.html#blog">Blog</a>
+            </li>
+            <li class="navitem">
+                <a href="./contact.html">Contact Us</a>
+            </li>
+        </ul>
+        <img src="./assets/icons/shopping-cart-black-icon.png" class="cart-icon">
     </div>
     <header class="contact-header">
         <h1 >Contact Us</h1>
@@ -44,6 +67,7 @@
             </form>
         </section>
     </main>
+    <script src="./scripts/mobile-Nav.Js"></script>
 </body>
 <footer>
     <div class="footer-container wrapper">

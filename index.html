@@ -12,23 +12,44 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="topbar">
+    <div id="mobile-nav"class="mobile-nav">
+        <ul id="inner-nav-menu"class="inner-nav-menu">
+            <li class="navitem">
+                <a href="./index.html">Home</a>
+            </li>
+            <li class="navitem">
+                <a href="#">Cart</a>
+            </li>
+            <li class="navitem">
+                <a href="./index.html#blog">Blog</a>
+            </li>
+            <li class="navitem">
+                <a href="./contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+    <div class="cartContainer">
+        <ul class="cartMenu">
+            <!-- cart items append here. -->
+        </ul>
+    </div>
+  <button class="hamburger">
+    <div class="bars"></div>
+  </button>
+    <div class="desktop-topbar">
        <img src="./assets/logo-black.png" alt="company logo">
-       <i class="fa-solid fa-bars"></i>
-        <nav>
-            <ul>
-                <li class="navitem">
-                    <a href="./index.html">Home</a>
-                </li>
-                <li class="navitem">
-                    <a href="./index.html#blog">Blog</a>
-                </li>
-                <li class="navitem">
-                    <a href="./contact.html">Contact Us</a>
-                </li>
-            </ul>
-        </nav>
-        <img src="./assets/icons/shopping-cart-black-icon.png">
+        <ul>
+            <li class="navitem">
+                <a href="./index.html">Home</a>
+            </li>
+            <li class="navitem">
+                <a href="./index.html#blog">Blog</a>
+            </li>
+            <li class="navitem">
+                <a href="./contact.html">Contact Us</a>
+            </li>
+        </ul>
+        <img src="./assets/icons/shopping-cart-black-icon.png" class="cart-icon">
     </div>
     <header class="index-header">
         <div class="textbox">
@@ -38,6 +59,7 @@
     </header>
     <main class="wrapper">
         <section class="categories">
+            <button class="carousel-left">&#171;</i></button> 
             <div class="banners">
                 <div class="plants">
                     <h3>- Plants</h3>
@@ -48,30 +70,32 @@
                     <img src="./assets/cat-2.jpg" alt="Furniture" class="banner-images center">
                 </div>
                 <div class="decoration">
-                    <h3>-Decoration</h3>
+                    <h3>-Decorations</h3>
                     <img src="./assets/cat-3.jpg" alt="Decoration " class="banner-images low" dv>
                 </div>
             </div>
+            <button class="carousel-right">&#187;</button>
         </section>
         <section class="featured">
-            <div class="container">
+            <div class="featuredContainer">
                 <h2>Featured Sale</h2>
                 <ul>
                     <li>
                         <p class="special-item pink">SALE</p>
                         <img src="./assets/prod-1.jpg" alt="product-preview">
-                        <h3>Malm Chair</h3>
+                        <h3>Lufa Chair</h3>
                         <div class="product-information">
-                            <p><span>$35</span>$22</p>
-                            <img src="./assets/icons/shopping-cart-black-icon.png">
+                            <p class="reduced">$35</p>
+                            <p class="price">$22</p>
+                            <img class="addCart" src="./assets/icons/shopping-cart-black-icon.png">
                         </div>
                     </li>
                     <li>
                         <img src="./assets/prod-2.jpg" alt="product-preview">
                         <h3>Pendant Lamp</h3>
                         <div class="product-information">
-                            <p>$45</p>
-                            <img src="./assets/icons/shopping-cart-black-icon.png">
+                            <p class="price">$45</p>
+                            <img  class="addCart" src="./assets/icons/shopping-cart-black-icon.png">
                         </div>
                     </li>
                     <li>
@@ -79,69 +103,70 @@
                         <img src="./assets/prod-3.jpg" alt="product-preview">
                         <h3>Magnolia Dream</h3>
                         <div class="product-information">
-                            <p>$18</p>
-                            <img src="./assets/icons/shopping-cart-black-icon.png">
+                            <p class="price">$18</p>
+                            <img class="addCart" src="./assets/icons/shopping-cart-black-icon.png">
                         </div>
                     </li>
                     <li>
                         <img src="./assets/prod-4.jpg" alt="product-preview">
                         <h3>Malm Chair</h3>
                         <div class="product-information">
-                            <p>$45</p>
-                            <img src="./assets/icons/shopping-cart-black-icon.png">
+                            <p class="price">$45</p>
+                            <img class="addCart" src="./assets/icons/shopping-cart-black-icon.png">
                         </div>
                     </li>
                     <li>
                         <img src="./assets/prod-5.jpg" alt="product-preview">
                         <h3>Candle</h3>
                         <div class="product-information">
-                            <p>$45</p>
-                            <img src="./assets/icons/shopping-cart-black-icon.png">
+                            <p class="price">$45</p>
+                            <img class="addCart" src="./assets/icons/shopping-cart-black-icon.png">
                         </div>
                     </li>
                     <li>
                         <img src="./assets/prod-6.jpg" alt="product-preview">
                         <h3>Jurgen</h3>
                         <div class="product-information">
-                            <p>$45</p>
-                            <img src="./assets/icons/shopping-cart-black-icon.png">
+                            <p class="price">$45</p>
+                            <img class="addCart" src="./assets/icons/shopping-cart-black-icon.png">
                         </div>
                     </li>
                     <li>
                         <img src="./assets/prod-7.jpg" alt="product-preview">
                         <h3>Ellie</h3>
                         <div class="product-information">
-                            <p><span>$25</span>$20</p>
-                            <img src="./assets/icons/shopping-cart-black-icon.png">
+                            <p class="reduced">$25</p>
+                            <p class="price">$20</p>
+                            <img class="addCart" src="./assets/icons/shopping-cart-black-icon.png">
                         </div>
                     </li>
                     <li>
                         <img src="./assets/prod-8.jpg" alt="product-preview">
                         <h3>Chava</h3>
                         <div class="product-information">
-                            <p>$22</p>
-                            <img src="./assets/icons/shopping-cart-black-icon.png">
+                            <p class="price">$22</p>
+                            <img class="addCart" src="./assets/icons/shopping-cart-black-icon.png">
                         </div>
                     </li>
                     <li>
                         <img src="./assets/prod-9.jpg" alt="product-preview">
                         <h3>Essence</h3>
                         <div class="product-information">
-                            <p>$15</p>
-                            <img src="./assets/icons/shopping-cart-black-icon.png">
+                            <p class="price">$15</p>
+                            <img class="addCart" src="./assets/icons/shopping-cart-black-icon.png">
                         </div>
                     </li>
                     <li>
                         <img src="./assets/prod-10.jpg" alt="product-preview">
                         <h3>Luma</h3>
                         <div class="product-information">
-                            <p>$15</p>
-                            <img src="./assets/icons/shopping-cart-black-icon.png">
+                            <p class="price">$15</p>
+                            <img class="addCart" src="./assets/icons/shopping-cart-black-icon.png">
                         </div>
                     </li>
                 </ul>
             </div>
-            <button>View All</button>
+            <button class="page-btn">View All</button>
         </section>
         <section class="sale-CTA">
             <div class="sale-container">
@@ -215,5 +240,8 @@
             </div>
         </div>
     </footer>
+    <script src="./scripts/mobile-Nav.Js"></script>
+    <script src="./scripts/carousel-Category-Banners.js"></script>
+    <script src="./scripts/cart-handling.Js"></script>
 </body>
 </html>

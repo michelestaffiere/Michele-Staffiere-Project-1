@@ -1,0 +1,83 @@
+@use "variables" as *;
+
+
+// hamburger icon styling
+.hamburger{
+    position: fixed;
+    display: none;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    z-index: 100;
+    width: 35px;
+    height: 35px;
+    top: 10px;
+    right: 10px;
+}
+.hamburger .bars, .hamburger::after, .hamburger::before{
+    content: '';
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    margin: 6px 0px;
+    transition: 0.4s;
+    z-index: 100;
+}
+// Animation for hamburger menu
+.hamburger.is-active::before{
+    transform: rotate(-45deg)translate(-10px,15px);
+}
+.hamburger.is-active::after{
+    transform: rotate(45deg)translate( 0px,-6px);
+}
+.hamburger.hamburger.is-active .bars{
+    opacity:0;
+}
+
+// pop out menu styling
+.mobile-nav{
+    position: fixed;
+    width: 100%;  
+    height: 5vh;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    z-index: 99;
+    & .inner-nav-menu{
+        position: fixed;
+        text-align: center;
+        top: -20px;
+        transform: translateY(-100%);
+        transition: transform .5s;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 0;
+        height: fit-content;
+        background:$white;
+    }   
+    & li{
+        list-style: none;
+        min-width: fit-content;
+        padding: 0;
+        & a{
+            margin: 1rem auto 1rem;
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            padding: .5rem .25rem .5rem;
+            border-radius: 5%;
+            text-decoration: none;
+            color: black;
+        }    
+    }    
+}    
+.mobile-nav .show-Menu{ 
+    transform: translateY(0);
+}

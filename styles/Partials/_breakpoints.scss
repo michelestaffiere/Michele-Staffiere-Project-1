@@ -30,6 +30,10 @@
       .banners h3{
         top: 85%;
       }
+      // mobile banner carousel buttons
+      .carousel-right,.carousel-left{
+        display: flex;
+    }
       //featured sale section
       .featured .container ul li img {
         max-width: 15rem;
@@ -89,15 +93,19 @@ footer{
 //Smartphones
 @media screen and (max-width: 620px){
   // Nav Bar
-  .topbar{
-    justify-content: space-between;
-    padding: 2rem;
-    & i{
-      display: block;
-    } 
-    nav ul{
+  .desktop-topbar{
+    display: none;
+    // justify-content: space-between;
+    // padding: 2rem;
+    & ul{
       display: none;
     }
+}
+.hamburger{
+  display: block;
+}
+.cart-icon{
+  display: none;
 }
   // Headers
    .index-header{
@@ -125,7 +133,7 @@ footer{
   }
 //section banners
   .banners{
-    flex-direction: column;
+    // display: block;
   }
   .banner-images {
      max-width: 15rem;

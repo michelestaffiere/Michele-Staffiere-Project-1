@@ -11,7 +11,7 @@
     & .banner-images{
         width: 25rem;
     }
-    h3{
+     body .banners h3{
         padding: 2% 10%;
         position: absolute;
         background-color: $white;
@@ -28,6 +28,7 @@
         align-self: end;
     }
 }
+
 // Featured Sale section
 .featured{
     display: flex;
@@ -37,7 +38,7 @@
     & h2{
         margin: 4rem 0;
     } 
-    .container{
+    .featuredContainer{
         text-align: center;
         margin: 3.5rem 0;
         & ul {
@@ -80,9 +81,10 @@
                         border: $l-gray-transparent 1px solid;
                         padding: .5rem;
                     }
-                    span{
+                    .reduced{
                         text-decoration: line-through;
                         margin: 0 1rem 0 0;
+                        display: inline-block;
                     }
                 }   
                 h3{
@@ -184,4 +186,41 @@
             height: auto;
         }
     }
+}
+
+// mobile banner carousel 
+.carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-item{
+    height: 100%;
+    width: auto;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+    top: -15%;
+    right: 14%;
+}
+.carousel-item.active-item{
+    display: block;
+}
+.carousel-right,.carousel-left{
+    background-color: rgba(0, 0, 0, 0.235);
+    border: none;
+    border-radius:10px ;
+    display: none;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-size: 3rem;
+    // position: absolute;
+    top: 60rem;
+    transition: 0.5 ease-in-out;
+}
+.carousel-right{
+    right: 1rem;
+}
+.carousel-left{
+    left: 1rem;
 }
